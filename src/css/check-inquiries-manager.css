@@ -1,0 +1,32 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.cim-content {
+  padding: 2rem;
+}
+.table-div {
+  overflow-x: auto;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.send-email {
+  background-color: #47525e;
+}
+.btn-div {
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .cim-content {
+    padding-left: 10px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.status-div {
+  padding: 3rem 0 2rem 3rem;
+}
+/* .styled-table {
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin-top: 1rem;
+}
+.styled-table thead tr {
+  background-color: #47525e;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody {
+  text-align: left;
+}
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #47525e;
+} */
+.btn {
+  padding: 1rem;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.delete-btn {
+  background-color: #d11a2a;
+}
+.disabled-btn {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+.visitor {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+.visitor-title {
+  background: #47525e;
+  color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table-div {
+  align-content: center;
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  .status-div {
+    padding-left: 5px;
+  }
+}

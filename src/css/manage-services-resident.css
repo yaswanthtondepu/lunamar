@@ -1,0 +1,128 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.manage-services {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+.manage-title {
+  background: #47525e;
+  color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.msr-content {
+  padding: 2rem 0;
+}
+.msr-apt-select {
+  display: flex;
+  gap: 5rem;
+}
+.msr-contents {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+select {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  font-size: 15px;
+}
+.msr-submit {
+  padding: 0.5rem 2rem !important;
+  color: white;
+  background-color: #47525e;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.registred-services {
+  padding: 2rem 0 2rem 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.styled-table {
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+}
+/* .styled-table thead tr {
+  background-color: #47525e;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody {
+  text-align: left;
+}
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #47525e;
+} */
+.msr-remove-btn {
+  background-color: #d11a2a;
+  padding: 1rem 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.msr-add-btn {
+  background-color: #76c893;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.msr-single-option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .manage-services {
+    height: calc(100% - 110px);
+  }
+  .msr-apt-select {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .registred-services {
+    padding-left: 1rem;
+    flex-direction: column;
+  }
+  .available-services-title {
+    padding-top: 2rem;
+  }
+  .msr-single-option {
+    row-gap: 1rem;
+  }
+  .msr-contents {
+    justify-content: center;
+  }
+  .hide {
+    display: none;
+  }
+}

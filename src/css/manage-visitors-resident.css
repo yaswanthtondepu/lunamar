@@ -1,0 +1,117 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.manage-visitors {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+.manage-title {
+  background: #47525e;
+  color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mvr-reject-btn {
+  background-color: #d11a2a;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.mvr-approve-btn,
+.add-visit-btn {
+  background-color: #76c893;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: fit-content;
+}
+.upcoming-visits,
+.all-visits {
+  padding: 2rem 0 2rem 5rem;
+}
+.single-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.filters {
+  display: flex;
+  column-gap: 3rem;
+}
+input[type="submit"] {
+  padding: 0.5rem 2rem;
+  color: white;
+  background-color: #47525e;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+select {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  font-size: 15px;
+}
+.add-visit {
+  display: flex;
+  justify-content: end;
+}
+.add-visit-container {
+  padding: 2rem 1rem 0 0;
+}
+.parent-visit-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+#parent-visit-form {
+  display: none;
+}
+.visit-form {
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+}
+
+@media (max-width: 768px) {
+  .manage-visitors {
+    height: calc(100% - 110px);
+  }
+  .upcoming-visits,
+  .all-visits {
+    padding-left: 1rem;
+  }
+  .table-div {
+    overflow-x: auto;
+  }
+  .hide {
+    display: none;
+  }
+  .visit-form {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    text-align: center;
+    row-gap: 1rem;
+  }
+  .filters {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .single-filter {
+    text-align: center;
+  }
+}

@@ -1,0 +1,84 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.service-request {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+.service-request-title {
+  background: #47525e;
+  color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.srr-content {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  padding-top: 3rem;
+}
+.srr-single-option {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.srr-sub-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6rem;
+  justify-content: center;
+}
+select {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  font-size: 15px;
+}
+textarea {
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  padding: 0.5rem;
+  width: 600px;
+  height: 200px;
+}
+.btn {
+  padding: 0.5rem 3rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.submit-btn {
+  background-color: #47525e;
+}
+.reset-btn {
+  background-color: gray;
+}
+.req-status {
+  padding: 2rem;
+}
+.table-div {
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  .service-request {
+    height: calc(100% - 110px);
+  }
+  .srr-sub-content {
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+  }
+  textarea {
+    width: 100%;
+  }
+  .req-status {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

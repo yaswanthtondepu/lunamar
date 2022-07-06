@@ -1,0 +1,97 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.mgp-content {
+  padding: 2rem 1rem 2rem 3rem;
+}
+.mgp-main-div {
+  background-color: #eaedf5;
+}
+.mgp-box {
+  background-color: #ffffff;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.mgp-sub-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.mgp-sub-content > div {
+  flex-basis: 50%;
+}
+.submit-btn {
+  background-color: #47525e;
+}
+.mgp-box {
+  display: flex;
+  justify-content: start;
+  column-gap: 5rem;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  padding: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.table-div {
+  overflow-x: auto;
+}
+.mgp-sub-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+select {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  font-size: 15px;
+}
+.delete-btn {
+  background-color: #d11a2a;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  padding-top: 1rem;
+}
+.mgp-ctm-form {
+  display: flex;
+  justify-content: center;
+}
+.single-option {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+.reset-btn {
+  background-color: gray;
+}
+.garden-table {
+  padding-top: 2rem;
+}
+@media (max-width: 768px) {
+  .mgp-content {
+    padding-left: 0;
+  }
+}

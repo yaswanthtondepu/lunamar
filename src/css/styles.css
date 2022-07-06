@@ -1,0 +1,305 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 20px;
+  font-family: "Oxygen", Helvetica, Arial, sans-serif;
+  color: #47525e;
+  height: 100%;
+}
+button,
+input[type="submit"] {
+  font-family: "Oxygen", Helvetica, Arial, sans-serif !important;
+}
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 99999;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  margin-left: 3rem;
+}
+
+.nav-link {
+  color: #000;
+}
+.nav-link-active {
+  background-color: #76c893;
+  color: #fff;
+}
+.nav-link:hover {
+  color: #76c893;
+}
+
+.nav-logo {
+  font-size: 25px;
+  background: #76c893;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  margin-right: 10px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+}
+.role-title {
+  cursor: pointer;
+}
+.table-div {
+  overflow-x: auto;
+}
+.styled-table {
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+  width: 90%;
+}
+select {
+  background-color: white;
+}
+th {
+  font-weight: normal;
+}
+.styled-table thead tr {
+  background-color: #47525e;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody {
+  text-align: left;
+}
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+  background-color: #ffffff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #47525e;
+}
+.caret-down {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    margin: 0;
+    z-index: 9999;
+  }
+  .header {
+    padding: 2rem 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: 250px;
+  padding: 0.7rem;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  font-size: 15px;
+}
+input[type="date"] {
+  width: 200px;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  width: 250px;
+  padding: 0.7rem;
+  outline: none;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.pad-top-2 {
+  padding-top: 2rem;
+}
+.pad-top {
+  padding-top: 1rem;
+}
+.align-center {
+  text-align: center;
+}
+button:disabled,
+button[disabled] {
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: not-allowed;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #ddd;
+}
+.main-div {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+.sub-title {
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.main-title {
+  background: #47525e;
+  color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .main-div {
+    height: calc(100% - 110px);
+  }
+  .sub-title {
+    padding-left: 1rem;
+  }
+}

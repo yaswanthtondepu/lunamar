@@ -1,0 +1,63 @@
+/* Tondepu, Venkata Satya Yaswanth - 1001879613
+Aleti, Sunil Kumar - 1001876963
+Macharla, Sampath Kumar - 1001869024 */
+.rir-content {
+  padding: 2rem;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-div {
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+textarea {
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  padding: 0.5rem;
+  width: 515px;
+  height: 125px;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.submit-btn {
+  background-color: #47525e;
+}
+select {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a9a9a9;
+  font-size: 15px;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#other-place-div {
+  display: none;
+}
+@media (max-width: 768px) {
+  .form-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  textarea {
+    width: 100%;
+  }
+}
